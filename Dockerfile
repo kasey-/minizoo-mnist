@@ -1,5 +1,7 @@
 FROM continuumio/miniconda3
 
+RUN apt update && apt -y upgrade
+RUN apt -y install build-essential
 RUN conda install --yes tensorflow
 RUN conda install --yes keras
 
