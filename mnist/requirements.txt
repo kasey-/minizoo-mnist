@@ -2,7 +2,7 @@ flask-cors
 scipy
 numpy
 keras
-tensorflow==1.5
+tensorflow
 imread
 Pillow
 h5py

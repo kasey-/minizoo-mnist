@@ -1,4 +1,7 @@
-FROM python:3.6
+FROM continuumio/miniconda3
+
+RUN conda install --yes tensorflow
+RUN conda install --yes keras
 
 COPY ./mnist /app
 WORKDIR /app
